@@ -26,17 +26,17 @@ public class CarController {
     }
 
     @RequestMapping(value = "/addCar", method = RequestMethod.POST)
-    public @ResponseBody void addCar(@RequestBody Car car) {
+    public void addCar(@RequestBody Car car) {
         service.addCar(car);
     }
 
-    @RequestMapping(value = "/removeCar/{car}", method = RequestMethod.DELETE)
-    public @ResponseBody void removeCar(@PathVariable("car") String car) {
+    @RequestMapping(value = "/removeCar/{car}", method = RequestMethod.GET)
+    public void removeCar(@PathVariable("car") String car) {
         service.deleteCar(car);
     }
 
     @RequestMapping(value = "/removeAllCars", method = RequestMethod.DELETE)
-    public @ResponseBody void removeAllCars() {
+    public void removeAllCars() {
         service.deleteAll();
     }
 
