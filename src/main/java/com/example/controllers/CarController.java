@@ -30,7 +30,7 @@ public class CarController {
         service.addCar(car);
     }
 
-    @RequestMapping(value = "/removeCar/{car}", method = RequestMethod.GET)
+    @RequestMapping(value = "/removeCar/{car}", method = RequestMethod.DELETE)
     public void removeCar(@PathVariable("car") String car) {
         service.deleteCar(car);
     }
