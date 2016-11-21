@@ -1,4 +1,4 @@
-package com.example.app;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -7,8 +7,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication
-@ComponentScan("com.example")
-@EnableAutoConfiguration
 @EnableMongoRepositories(basePackages = {"com.example"})
 public class SpringMongoApplication {
 
