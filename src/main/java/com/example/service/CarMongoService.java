@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.example.beans.Car;
 import com.example.repositories.CarRepository;
 
-@Service("carMongoService")
+@Service
 public class CarMongoService implements CarService{
 
 	@Autowired
