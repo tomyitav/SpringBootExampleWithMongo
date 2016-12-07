@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.beans.Car;
+import com.example.beans.Train;
 import com.example.service.CarService;
 
 @RestController
@@ -28,6 +29,11 @@ public class CarController {
     @RequestMapping(value = "/addCar", method = RequestMethod.POST)
     public void addCar(@RequestBody Car car) {
         service.addCar(car);
+    }
+    
+    @RequestMapping(value = "/updateCar", method = RequestMethod.PUT)
+    public @ResponseBody void updateTrain(@RequestBody Car car) {
+        service.updateCar(car);
     }
 
     @RequestMapping(value = "/removeCar/{car}", method = RequestMethod.DELETE)

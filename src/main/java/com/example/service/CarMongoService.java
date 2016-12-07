@@ -33,6 +33,11 @@ public class CarMongoService implements CarService{
 	public void deleteAll() {
 		repository.deleteAll();
 	}
+
+	@Override
+	public void updateCar(Car car) {
+		repository.save(car);
+	}
 	
 
 }

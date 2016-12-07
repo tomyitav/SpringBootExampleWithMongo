@@ -12,4 +12,6 @@ public interface CarService {
     public void deleteCar(String name);
 
     public void deleteAll();
+    
+    public void updateCar(Car car);
 }
