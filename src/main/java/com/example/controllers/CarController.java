@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.beans.Car;
-import com.example.beans.Train;
 import com.example.service.CarService;
 
 @RestController
